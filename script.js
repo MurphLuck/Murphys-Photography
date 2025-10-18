@@ -103,3 +103,4 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
     }
   });
 })();
+
