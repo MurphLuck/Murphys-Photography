@@ -1,132 +1,199 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="veiwport" content="width=device-width, initial-scale=1.0">
-        <title>Animals</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        
-        <header>
-            <nav>
-                <a href="">Home</a>
-                <a href="">Contact</a>
-                <a href="">Info</a>
-            </nav>
-        </header>
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tortuga Clean  Nettoyage haute pression</title>
+    <meta name="description" content="Tortuga Clean propose le nettoyage haute pression pour particuliers et professionnels : allées, toitures, façades, terrasses et plus. Écoresponsable, assuré, prêt à faire briller.">
+    <link rel="preload" as="image" href="assets/logo.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Accueil Tortuga Clean">
+        <img class="brand__logo" src="assets/logo.png" alt="Logo Tortuga Clean" width="64" height="64">
+        <span class="brand__name">Tortuga Clean</span>
+      </a>
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Ouvrir/fermer la navigation"></button>
+      <nav id="site-nav" class="site-nav" aria-label="Navigation principale">
+        <a href="#services">Services</a>
+        <a href="#process">Notre processus</a>
+        <a href="#testimonials">Avis</a>
+        <a href="#contact" class="btn btn--small">Demander un devis</a>
+        <a href="tel:+33665088856" aria-label="Appeler Tortuga Clean au +33 6 65 08 88 56">+33 6 65 08 88 56</a>
+        <a href="mailto:tortugaclean@gmail.com" aria-label="Envoyer un e-mail à Tortuga Clean">tortugaclean@gmail.com</a>
+      </nav>
+    </header>
 
-        <div class="carousel">
-            <div class="list">
-                <div class="items">
-                    <img src="Bison_0.jpg" alt="">
-                    <div class="content">
-                        <div class="author">Murph</div>
-                        <div class="title">The Wonderful World of Bison!</div>
-                        <div class="Topic">Bison</div>
-                        <div class="des">The Bison are majestic creatures built like tanks.</div>
-                        <div class="buttons">
-                            <button>See More</button>
-                            <button>See More?</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="items">
-                    <img src="Bison_1.jpg" alt="">
-                    <div class="content">
-                        <div class="author">Murph</div>
-                        <div class="title">Bisons on the prowel!</div>
-                        <div class="Topic">Bison</div>
-                        <div class="des">Bison primarily eat grasses, weeds and leafy plants—typically foraging for nine to 11 hours a day. That's where the bison's large protruding shoulder hump comes in handy during the winter.</div>
-                        <div class="buttons">
-                            <button>See More</button>
-                            <button>See More?</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="items">
-                    <img src="Bison_2.jpg" alt="">
-                    <div class="content">
-                        <div class="author">Murph</div>
-                        <div class="title">Snowy Beasts</div>
-                        <div class="Topic">Bison</div>
-                        <div class="des">Bison can run up to 35 miles per hour. Plus, they're extremely agile. Bison can spin around quickly, jump high fences and are strong swimmers.</div>
-                        <div class="buttons">
-                            <button>See More</button>
-                            <button>See More?</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="items">
-                    <img src="Bison_3.jpg" alt="">
-                    <div class="content">
-                        <div class="author">Murph</div>
-                        <div class="title">Eyes of the Beasts</div>
-                        <div class="Topic">Bison</div>
-                        <div class="des">While bison have poor eyesight, they have excellent senses of smell and hearing. Cows and calves communicate using pig-like grunts, and during mating season, bulls can be heard bellowing across long distances.</div>
-                        <div class="buttons">
-                            <button>See More</button>
-                            <button>See More?</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="thumbnail">
-                <div class="item">
-                    <img src="Bison_1.jpg">
-                    <div class="content">
-                        <div class="title">
-                            Name Slider
-                        </div>
-                        <div class="des">
-                            Description
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="Bison_2.jpg">
-                    <div class="content">
-                        <div class="title">
-                            Name Slider
-                        </div>
-                        <div class="des">
-                            Description
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="Bison_3.jpg">
-                    <div class="content">
-                        <div class="title">
-                            Name Slider
-                        </div>
-                        <div class="des">
-                            Description
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="Bison_0.jpg">
-                    <div class="content">
-                        <div class="title">
-                            Name Slider
-                        </div>
-                        <div class="des">
-                            Description
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="arrows">
-                <button id="prev"><</button>
-                <button id="next">></button>
-            </div>
-            <div class="time"></div>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <h1 id="hero-title">Faites briller avec Tortuga Clean</h1>
+          <p class="hero__tag">Nettoyage haute pression écoresponsable pour particuliers et entreprises.</p>
+          <div class="hero__ctas">
+            <a class="btn" href="#contact">Obtenir un devis gratuit</a>
+            <a class="btn btn--ghost" href="#services">Voir les services</a>
+          </div>
+          <ul class="trust-badges">
+            <li>Agréé et assuré</li>
+            <li>Détergents écologiques</li>
+            <li>Satisfaction garantie</li>
+          </ul>
         </div>
+        <div class="hero__art" role="img" aria-label="Surfaces propres aux reflets scintillants"></div>
+      </section>
 
-            
-        <script src="app.js"></script>
-    </body>
-</html>
+      <section id="services" class="section section--alt" aria-labelledby="services-title">
+        <div class="container">
+          <h2 id="services-title">Nos services de nettoyage haute pression</h2>
+          <p class="section__lede">Un nettoyage sûr et efficace, adapté à chaque surface.</p>
+          <div class="cards">
+            <article class="card">
+              <h3>Allées et trottoirs</h3>
+              <p>Éliminer l'huile, la saleté et les taches pour raviver l'attrait.</p>
+            </article>
+            <article class="card">
+              <h3>Nettoyage de façade</h3>
+              <p>Lavage doux basse pression pour bardage, stuc et brique.</p>
+            </article>
+            <article class="card">
+              <h3>Nettoyage de toiture</h3>
+              <p>Traitements doux qui retirent les algues sans abîmer les bardeaux.</p>
+            </article>
+            <article class="card">
+              <h3>Terrasses et clôtures</h3>
+              <p>Rénove le bois et les composites, prêt pour teinture ou scellant.</p>
+            </article>
+            <article class="card">
+              <h3>Commercial</h3>
+              <p>Vitrines, parkings et espaces communs d'HOA selon planning.</p>
+            </article>
+            <article class="card">
+              <h3>Demandes sur mesure</h3>
+              <p>Si l'eau peut l'atteindre, nous pouvons probablement le nettoyer. Demandez-nous !</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="section" aria-labelledby="process-title">
+        <div class="container">
+          <h2 id="process-title">Notre processus simple</h2>
+          <ol class="steps">
+            <li>
+              <span class="step__num">1</span>
+              <div>
+                <h3>Demander un devis</h3>
+                <p>Partagez des photos ou une adresse pour un tarif rapide et précis.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step__num">2</span>
+              <div>
+                <h3>Planifier</h3>
+                <p>Nous confirmons un horaire qui vous convient, sans plages à la journée.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step__num">3</span>
+              <div>
+                <h3>Faire briller</h3>
+                <p>Lavage professionnel avec détergents écologiques et un nettoyage soigné.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section section--alt" aria-labelledby="testimonials-title">
+        <div class="container">
+          <h2 id="testimonials-title">Nos clients adorent la brillance</h2>
+          <div class="quotes">
+            <figure class="quote">
+              <blockquote>L’allée paraît neuve. Rapide, professionnel et soigneux avec le jardin !</blockquote>
+              <figcaption> Propriétaire à Lakeside</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>Notre devanture correspond enfin à notre marque — lumineuse et accueillante.</blockquote>
+              <figcaption> Commerçant local</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>Le lavage doux de notre toit a retiré des années d'algues sans dégâts.</blockquote>
+              <figcaption> Gestionnaire immobilier</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact" aria-labelledby="contact-title">
+        <div class="container">
+          <h2 id="contact-title">Obtenez votre devis gratuit</h2>
+          <p class="section__lede">Dites-nous ce qu'il faut nettoyer. Nous répondrons rapidement.</p>
+          <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <input type="hidden" name="access_key" value="2aafb250-8f5d-4847-8064-82dd5ba1a5a3">
+            <input type="hidden" name="subject" value="Nouvelle demande de devis - Tortuga Clean">
+            <input type="hidden" name="redirect" value="#thank-you">
+            <p hidden>
+              <label>Ne pas remplir: <input name="bot-field"></label>
+            </p>
+            <div class="form__row">
+              <label>
+                <span>Nom</span>
+                <input type="text" name="name" autocomplete="name" required>
+              </label>
+              <label>
+                <span>E-mail</span>
+                <input type="email" name="email" autocomplete="email" required>
+              </label>
+            </div>
+            <div class="form__row">
+              <label class="full">
+                <span>Adresse ou secteur</span>
+                <input type="text" name="address" autocomplete="street-address">
+              </label>
+            </div>
+            <div class="form__row">
+              <label class="full">
+                <span>Que faut-il nettoyer ?</span>
+                <textarea name="message" rows="4" required placeholder="Allée, façade, toiture, terrasse, etc."></textarea>
+              </label>
+            </div>
+            <div class="form__actions">
+              <button class="btn" type="submit">Demander un devis</button>
+              <a class="btn btn--ghost" href="tel:+33665088856" aria-label="Appeler Tortuga Clean au +33 6 65 08 88 56">Appelez-nous</a>
+            </div>
+            <div class="form__status" aria-live="polite" aria-atomic="true"></div>
+          </form>
+        </div>
+      </section>
+
+      <section id="thank-you" class="thankyou section" aria-labelledby="thankyou-title">
+        <div class="container">
+          <h2 id="thankyou-title">Merci pour votre demande</h2>
+          <p class="section__lede">Nous vous répondrons très rapidement avec un devis personnalisé.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <strong>Tortuga Clean</strong>
+          <p>Le nettoyage haute pression, bien fait.</p>
+          <p>
+            <a href="tel:+33665088856" aria-label="Appeler Tortuga Clean au +33 6 65 08 88 56"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 01.98-.26c1.07.27 2.22.41 3.39.41a1 1 0 011 1V21a1 1 0 01-1 1C10.3 22 2 13.7 2 3a1 1 0 011-1h3.67a1 1 0 011 1c0 1.17.14 2.32.41 3.39a1 1 0 01-.26.98l-2.2 2.2z" fill="currentColor"/></svg> +33 6 65 08 88 56</a><br>
+            <a href="mailto:tortugaclean@gmail.com"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/></svg> tortugaclean@gmail.com</a>
+          </p>
+          <small> <span id="year"></span> Tortuga Clean. Tous droits réservés.</small>
+        </div>
+        <div class="footer__legal">
+          <a href="#top" aria-label="Retour en haut de page">
+            <img class="footer__logo" src="assets/logo.png" alt="Tortuga Clean" width="140" height="140">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
